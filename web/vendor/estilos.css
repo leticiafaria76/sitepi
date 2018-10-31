@@ -1,0 +1,277 @@
+/*
+* 
+* @author Maik Moura
+* @version 0.1
+*/
+
+/* ========================= layout ======================== */
+html {
+	height: 100%;
+	overflow: auto;
+}
+
+body {
+	font-family: "Helvetica","Trebuchet MS",sans-serif;
+	background: #eee;
+}
+
+
+
+a:hover {transform: color 0.4s, background 0.4s;}
+
+/* -- Barra de navegação -- */
+.bg-nav {
+	background: #4169E1;
+	-webkit-position: sticky;
+	/*rgba(65,105,225, 0.8)*/
+}
+
+#barra-navegacao {color: white;}
+
+#barra-navegacao a {color: #ddd;}
+
+#barra-navegacao a:hover {color: #fff;}
+
+#barra-navegacao .dropdown-menu {
+	background: #191970;
+}
+#barra-navegacao .dropdown-menu a{
+	background: #191970;
+	color: #ccc;
+}
+#barra-navegacao .dropdown-menu a:hover{
+	color: #fff;
+	background-color: #191970;
+}
+
+/* -- Sub nav -- */
+#sub-nav {background: #fff;}
+
+#sub-nav a{
+	color: #4169E1;
+	padding: 13px;
+}
+#sub-nav a:hover {
+	color: #000090;
+	text-decoration: none;
+}
+
+#sub-nav .dropdown-menu a:hover {
+	color: #000090;
+	background: none;
+}
+
+#sub-nav .ativo {border-bottom: 3px solid #00008B;}
+
+#sub-nav .borda-item {
+	border-top: 1px solid #ccc;
+}
+
+/* -- Postagens -- */
+#postagens {
+	padding: 5px 0px;
+}
+
+/* -- Botões --*/
+.btn-search {
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	background: #eee;
+	color: black;
+}
+
+.btn-login {
+	background: #191970;
+	color: #fff;
+}
+
+.btn-login:hover {
+	background: #3255ff;
+	color: #fff;
+}
+
+.btn-enviar {
+	background: #ddd;
+	color: black;
+}
+
+.btn-enviar:hover {
+	background: #fff;
+	color: black;
+}
+
+/* -- Páginador -- */
+#paginador {
+	padding: 4px 0px;
+	background: #fff;
+	margin: 0px;
+}
+
+#paginador .page-link{
+	background: #191970;
+	color: #fff;
+}
+#paginador .page-link:hover{
+	background: #3255ff;
+}
+
+#paginador ul{
+	margin: 0px;
+}
+
+.expand-font-sm {
+	font-size: 25px;
+	vertical-align: bottom;
+}
+
+.navegador-link {
+	color: #4169E1;
+}
+
+.navegador-link:hover {
+	color: #000090;
+	text-decoration: none;
+}
+
+/* -- Rodapé -- */
+footer {
+	position: relative;
+	background: #4169E1;
+	padding: 30px 0px 0px 0px;
+}
+
+#sobre-nos {
+	padding: 20px;
+}
+#estatisticas {
+	padding: 20px;
+	background: #191970;
+	border-radius: 5px;
+}
+
+.margem-abaixo{
+	margin-bottom: 20px;
+}
+
+#instagram {
+	background: linear-gradient(120deg, #515BD4, #8134AF, #DD2A7B, #F58429, #FEDA77);
+	background-repeat: no-repeat;
+	background-size: 93% 80%;
+	background-position: center;
+	border-radius: 30px;
+}
+
+/* ========================= Tipografia ======================== */
+
+/* -- Barra de navegação --*/
+.nav-font-formatada a, .nav-font-formatada {
+	font-weight: bold;
+	font-size: 15px;
+}
+
+/* -- Postagens -- */
+
+
+/* -- Rodapé -- */
+footer h3{
+	color: #eee;
+	font-weight: 500;
+	font-size: 22px;
+}
+
+footer p, footer li {
+	color: white;
+	font-size: 16px;
+}
+
+footer p {
+	text-align: justify;
+}
+
+footer li>a{
+	color: #fff;
+}
+
+footer li>a:hover{
+	color: #fff;
+	text-decoration: none;
+}
+
+#copyright, #copyright span {
+	font-size: 13px;
+	color: #6495ED;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	font-weight: bold;
+}
+
+
+/* -- Ícones Font Awesome -- */
+i{font-size: 16px;}
+
+.social-media i{
+	font-size: 60px;
+	color: #fff;
+}
+
+.sm-fixar {
+	position: relative;
+	right: 20px;
+}
+
+footer .list-unstyled i {
+	font-size: 21px;
+}
+
+footer .list-unstyled li {
+	margin-bottom: 5px;
+}
+
+/* ------ Média Queris ------ */
+
+/* xs */
+@media (max-width: 575.98px){
+	#barra-navegacao li{
+		margin: 5px 0px;
+	}
+	.sm-fixar {
+		position: absolute;
+		right: 20px;
+		top: 10px;
+	}
+	.expand-font-sm {
+		font-size: 40px;
+	}
+	.centralizar {
+		text-align: center;
+	}
+}
+
+/* sm */
+@media (min-width: 576px) and (max-width: 767.98px){
+	.sm-fixar {
+		position: absolute;
+		right: 5%;
+		top: 10px;
+	}
+	.expand-font-sm {
+		font-size: 40px;
+	}
+	.centralizar {
+		text-align: center;
+	}
+}
+
+/* md */
+@media (min-width: 768px) and (max-width: 991.98px){
+	.align-end {
+		position: relative;
+		right: 0;
+	}
+}
+
+/* lg */
+@media (min-width: 992px) and (max-width: 1199.98px){
+}
+
