@@ -1,44 +1,119 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags obrigatórias -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+
+    <!-- Bootstrap CSS -->
+    <link href="../vendor/bootstrap/css/bootstrapmk.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link href="../fontawesome/css/all.min.css" rel="stylesheet">
+    <!-- CSS -->
+    <link href="../vendor/estilos.css" rel="stylesheet">
 
     <title>Site</title>
+    <!-- <link rel="icon" href="#"> -->
+  </head>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <body>
+    <!-- Barra de Navegação -->
+    <header class="navbar navbar-expand-md navbar-dark bg-nav sticky-top">
+      <div class="container">
+        <a class="navbar-brand d-none d-md-block" href="#">Site</a> <!-- Brand -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#barra-navegacao" data-controls="Barra de Navegação" aria-expanded="false" aria-label="Alternar Navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button> <!-- Botão de navegação para xs and sm devices -->
 
-    <!-- MetisMenu CSS -->
-    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+        <div class="collapse navbar-collapse nav-font-formatada position-relative" id="barra-navegacao">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#"><i class="fas fa-home"></i> Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" role="button" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Categorias
+              </a>
+              <div class="dropdown-menu" aria-labelledby="Barra de navegação de Categorias">
+                <a class="dropdown-item" href="#">Item 1</a>
+                <a class="dropdown-item" href="#">Item 2</a>
+                <a class="dropdown-item" href="#">Item 3</a>
+                <a class="dropdown-item" href="#">Item 4</a>
+              </div>
+            </li>
+            <ul class="nav d-inline d-md-none">
+              <li class="nav-item ml-lg-5 ml-md-3">
+                <form class="form-inline">
+                  <div class="input-group">
+                    <button class="btn btn-search" type="submit"><i class="fas fa-search"></i></button>
+                    <input class="form-control" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                  </div>
+                </form>
+              </li>
+            </ul>
+          </ul>
+        </div> <!-- /navbar-opções -->
+        <ul class="navbar-nav sm-fixar flex-row">
+          <li class="nav-item flex-column mr-2 d-none d-md-inline">
+            <form class="form-inline">
+              <div class="input-group">
+                <button class="btn btn-search" type="submit"><i class="fas fa-search"></i></button>
+                <input class="form-control" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+              </div>
+            </form>
+          </li>
+          <li class="nav-item ml-1 flex-column">
+            <a class="btn btn-login nav-font-formatada"  href="#">
+              <i class="fas fa-user-alt"></i>
+              <span class="d-none d-lg-inline"> Login / Cadastrar</span>
+			  
+            </a>
+			
+          </li>
+          <li class="nav-item ml-sm-2 flex-column">
+            <a class="btn btn-enviar nav-font-formatada"href="#">
+              <i class="fas fa-plus"></i>
+              <span class="d-none d-lg-inline"> Enviar</span>
+            </a>
+          </li>
+        </ul>
+      </div> <!-- /container -->
+    </header> <!-- /navbar -->
 
-    <!-- Custom CSS -->
-    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-
-<body>
-
-    <div class="container">
+    <!-- Nav -->
+    <section id="sub-nav">
+      <div class="container">
+        <a class="dropdown dropdown-toggle d-block d-md-none nav-font-formatada" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+          Opção
+        </a>
+        <div class="dropdown-menu nav-font-formatada">
+          <a class="dropdown-item" href="#">Destaques</a>
+          <a class="dropdown-item borda-item" href="#">Mais quentes</a>
+          <a class="dropdown-item borda-item" href="#">Novidades</a>
+          <a class="dropdown-item borda-item" href="#">Comentários</a>
+        </div>
+        <div class="nav nav-font-formatada d-none d-md-inline-flex">
+          <a class="nav-link active ativo" href="#">Destaques</a>
+          <a class="nav-link" href="#">Mais quentes</a>
+          <a class="nav-link" href="#">Novidades</a>
+          <a class="nav-link" href="#">Comentários</a>
+        </div>
+      </div>
+    </section>
+	
+	<!-- Form -->
+	
+	<div class="container">
         <div class="row">
-            <div class="col-md-4 col-md-offset-4">
+		<div class="col-md-4">
+
+		</div>
+            <div class="col-md-5 col-md-offset-4">
 				<br/>
                 <div class="well">
+					<div class="panel-heading">
+                        <h3 class="panel-title">Login</h3> <br/>
+                    </div>
                         <form role="form">
                             <fieldset>
                                 <div class="form-group">
@@ -49,30 +124,123 @@
                                 </div>
                                 <div class="checkbox">
                                     <label>
-                                        <input name="remember" type="checkbox" value="Remember Me">Lembrar-me
+                                        <input name="remember" type="checkbox" value="Remember Me"> Lembrar-me
                                     </label>
                                 </div>
                                 <!-- Change this to a button or input when using this as a form -->
-                                <a href="index.html" class="btn btn-lg btn-success btn-block">Login</a>
+								<button type="submit" class="btn btn-lg btn-success btn-block">Login</button>
                             </fieldset>
                         </form>
-                </div>
+                
             </div>
         </div>
     </div>
+	</div>
+<br/><br/><br/><br/><br/><br/><br/>
 
-    <!-- jQuery -->
-    <script src="../vendor/jquery/jquery.min.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Rodapé -->
+    <footer>
+      <div class="container">
+        <div class="row margem-abaixo">
+          <div class="col-md-6" id="sobre-nos">
+            <h3>Sobre Nós</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque congue sit amet mauris vel iaculis. Mauris et pretium odio, eu accumsan massa.</p>
+          </div>
+          <div class="col-md-6 col-xs-12" id="estatisticas">
+            <h3>Estatisticas</h3>
+            <div class="row">
+              <div class="col-md-6 col-xs-12">
+                <ul class="list-unstyled">
+                  <li>
+                    <i class="fas fa-user"></i>&nbsp;
+                    <strong>320,273</strong> Membros
+                  </li>
+                  <li>
+                    <i class="fas fa-tag"></i>&nbsp;
+                    <strong>89,624</strong> Promoções
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-xs-12">
+                <ul class="list-unstyled">
+                  <li>
+                    <i class="fas fa-comment"></i>&nbsp;
+                    <strong>387,036</strong> Comentários
+                  </li>
+                  <li>
+                    <i class="fab fa-facebook-square"></i>&nbsp;
+                    <strong>3,315,506</strong> Fãs no Facebook
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row margem-abaixo">
+          <div class="col-md-12">
+            <h3>Promoções atuais</h3>
+            <ul class="list-inline nav-font-formatada">
+              <li class="list-inline-item">
+                <a href="#">Black Friday 2018</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">Dia do Consumidor 2018</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">Game Season</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">Cupons de desconto</a>
+              </li>   
+          </div>
+        </div>
+        <div class="row margem-abaixo">
+          <div class="col-md-12">
+            <h3>Perguntas?</h3>
+            <ul class="list-inline nav-font-formatada">
+              <li class="list-inline-item">
+                <a href="#">Sugestão</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">Contato</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">Política de privacidade</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">Termos de Uso</a>
+             
+              <li class="list-inline-item">
+                <a href="#">Imprensa</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">Código de Conduta</a>
+              </li> 
+          </div>
+        </div>
+        <div class="row margem-abaixo centralizar">
+          <div class="col-md-12">
+            <h3>Redes sociais</h3>
+            <ul class="nav social-media justify-content-center justify-content-md-start">
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fab fa-instagram" id="instagram"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fab fa-facebook" id="facebook"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fab fa-twitter" id="twitter"></i></a>
+              </li>
+          </div>
+        </div>
+        <p id="copyright"><span>Copyright © Site. Todos direitos reservados.</span><p>
+      </div>
+    </footer>
 
-    <!-- Metis Menu Plugin JavaScript -->
-    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="../dist/js/sb-admin-2.js"></script>
-
-</body>
-
+    <!-- jQuery, Popper.js, BootstrapJS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
 </html>
